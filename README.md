@@ -31,8 +31,8 @@ Install & configure Husky (Git Hooks), Lint Staged (Commits Staged Linter), Comm
 - (Optional) Script -> `"lint": "eslint ."` (Exec linter)
 - (Optional) Script -> `"lint:fix": "eslint --fix ."` (Fix errors by linter)
 - (Optional) Script -> `"lint:commit": "npx lint-staged"` (Exec linter but only files in staged)
-- (Optional) Script -> `"pretier": "prettier . --write"` (Exec prettier for all files)
-- Create _`commitlint.config.js`_ and configure.
+- (Optional) Script -> `"pretier": "prettier . --write"` (Exec prettier for all files). (Add file _`.prettierrc.json`_ and _`.editorconfig`_)
+- Create _`commitlint.config.ts`_ and configure.
 - Create a git hook to make a commit-msg and thus run a regular expression validator before each commit
   - `npx husky add .husky/commit-msg 'npx --no -- commitlint --edit ${1}'`
 - Create a git hook to do a pre-commit and this run the lint-staged (prettier and eslint) and test before each commit
