@@ -1,0 +1,45 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.modal {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  &_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    button {
+      flex: 1;
+      color: white;
+      border-radius: 4px;
+      flex: 1;
+      padding: 10px 20px;
+      text-align: center;
+      cursor: pointer;
+      border: none;
+      &:first-child {
+        background-color: black;
+      }
+      &:last-child {
+        background-color: #8b5cf6;
+      }
+    }
+  }
+}

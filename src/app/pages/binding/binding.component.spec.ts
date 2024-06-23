@@ -1,17 +1,17 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { ListenersComponent } from "./listeners.component";
+import { BindingComponent } from "./binding.component";
 
-describe("ListenersComponent", () => {
-  let component: ListenersComponent;
-  let fixture: ComponentFixture<ListenersComponent>;
+describe("BindingComponent", () => {
+  let component: BindingComponent;
+  let fixture: ComponentFixture<BindingComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ListenersComponent]
+      imports: [BindingComponent]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ListenersComponent);
+    fixture = TestBed.createComponent(BindingComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

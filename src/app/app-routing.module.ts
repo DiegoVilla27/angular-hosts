@@ -4,13 +4,17 @@ import { RouterModule, Routes } from "@angular/router";
 const routes: Routes = [
   {
     path: "listeners",
-    loadChildren: () =>
-      import("./listeners/listeners.module").then((m) => m.ListenersModule)
+    loadComponent: () =>
+      import("./pages/listeners/listeners.component").then(
+        (m) => m.ListenersComponent
+      )
   },
   {
     path: "binding",
-    loadChildren: () =>
-      import("./binding/binding.module").then((m) => m.BindingModule)
+    loadComponent: () =>
+      import("./pages/binding/binding.component").then(
+        (m) => m.BindingComponent
+      )
   },
   {
     path: "",

@@ -3,12 +3,12 @@ import { Component, HostBinding } from "@angular/core";
 @Component({
   selector: "app-binding",
   templateUrl: "./binding.component.html",
-  styleUrls: ["./binding.component.scss"]
+  styleUrls: ["./binding.component.scss"],
+  standalone: true
 })
 export class BindingComponent {
-
-  @HostBinding('style.color') color = 'blue';
-  @HostBinding('attr.example-attr') attr = 'value-attr';
+  @HostBinding("style.color") color = "blue";
+  @HostBinding("attr.example-attr") attr = "value-attr";
   // This class is declared in styles.scss
-  @HostBinding('class.badge') badgeClass = true;
+  @HostBinding("class.badge") badgeClass = true;
 }

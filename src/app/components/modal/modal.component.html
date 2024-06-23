@@ -1,0 +1,26 @@
+<div class="overlay" appOutsideClick [isModal]='true' [modalClass]="'modal'" [modalBtnTarget]="btnModal" (outsideClick)='closeModal()'>
+  <div class="modal">
+    <div class='modal_header'>
+      <h1>Modal</h1>
+    </div>
+    <div class='modal_body'>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maiores iste
+        eligendi minus provident consequatur officiis ullam sint tempore
+        laudantium expedita voluptate optio laborum nostrum officia ut, porro
+        odio necessitatibus placeat? Qui omnis esse vero nesciunt similique eos
+        ducimus, quam, optio deleniti voluptatem iure nulla magni, suscipit
+        vitae tempore veritatis molestiae velit inventore adipisci quasi ab!
+        Amet fugiat autem praesentium provident debitis molestias sint at
+        temporibus odio quo, odit repellat, eaque voluptate delectus asperiores
+        eligendi quisquam ipsam laudantium ipsa libero, doloribus nemo itaque
+        soluta et. Reprehenderit corrupti eius totam doloribus iste aut
+        voluptatum fuga deserunt, excepturi dolor odio nisi est. Placeat.
+      </p>
+    </div>
+    <div class='modal_footer'>
+      <button type='button' (click)="closeModal()">Cancel</button>
+      <button type='button' (click)="closeModal()">Submit</button>
+    </div>
+  </div>
+</div>

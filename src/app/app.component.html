@@ -1,8 +1,8 @@
 <ul>
-  <li [routerLink]="['/listeners']">Listeners</li>
-  <li [routerLink]="['/binding']">Binding</li>
+  <li [routerLink]="['/listeners']" routerLinkActive="active">Listeners</li>
+  <li [routerLink]="['/binding']" routerLinkActive="active">Binding</li>
 </ul>
 
-<hr>
-
 <router-outlet></router-outlet>
+
+<app-modal *ngIf="isModalOpen"/>

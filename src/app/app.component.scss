@@ -1,0 +1,23 @@
+ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  li {
+    border-radius: 4px;
+    flex: 1;
+    padding: 10px 20px;
+    text-align: center;
+    color: #8b5cf6;
+    background-color: transparent;
+    border: 1px solid #8b5cf6;
+    cursor: pointer;
+  }
+}
+
+.active {
+  background-color: #8b5cf6 !important;
+  color: white !important;
+}
